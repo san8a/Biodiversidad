@@ -1,0 +1,109 @@
+<html>
+
+<head>
+
+<style>
+
+    .b{
+        opacity: 1;
+    }
+    .b::after{
+        content: '';
+        background-color: blue;
+        width: 10%;
+        height: 20%;
+        position: absolute;
+        top: 60%;
+        left: 70px;
+        border-radius: 10px;
+        opacity: 0;
+        transition-property: width;
+        transition-duration: 1s;
+       
+    }
+    .b:hover::after{
+        opacity: 1;
+        width: 70%;
+    }
+    .h{
+        opacity: 1;
+    }
+    .h::after{
+        content: '';
+        background-color: yellow;
+        width: 10%;
+        height: 20%;
+        position: absolute;
+        top: 60%;
+        left: 40px;
+        border-radius: 10px;
+        opacity: 0;
+        transition-property: width;
+        transition-duration: 1s;
+       
+    }
+    .h:hover::after{
+        opacity: 1;
+        width: 70%;
+    }
+    .t{
+        opacity: 1;
+    }
+    .t::after{
+        content: '';
+        background-color: red;
+        width: 10%;
+        height: 20%;
+        position: absolute;
+        top: 60%;
+        left: 42px;
+        border-radius: 10px;
+        opacity: 0;
+        transition-property: width;
+        transition-duration: 1s;
+       
+    }
+    .t:hover::after{
+        opacity: 1;
+        width: 58%;
+    }
+</style>
+
+    <link rel="stylesheet" href="css.css">
+</head>
+<body style="background-color: #000;">
+
+    <header id="Inicio" >
+        <div class="inner-width" >
+          <div class="menu-icon" style="z-index: 101;"  onclick="menu()">
+            
+          </div>
+        </div>
+      </header>
+     
+     
+      
+      <div class="vr" id="me" style="width: 30%;z-index: 100;color: aqua;text-decoration: none;position: fixed;top: 0%;left: 70%;"><nav>
+          
+          <div class="h" style="position: absolute;top: 20%;left: 15%;background-color: #000;z-index: 102;width: 200px;height: 100px;text-align: center;font-size: 40px;color: #fff;font-family: 'Encode Sans SC', sans-serif;"><li ><a href="#Inicio"><font color="white">
+          INICIO</font></a></li></div>
+          <div class="b" style="position: absolute;top: 40%;left: 10%;background-color: #000;z-index: 102;width: 450px;height: 100px;text-align: center;font-size: 40px;color: #fff;font-family: 'Encode Sans SC', sans-serif;"><li><a href="#miau"><font color="white">INTRODUCCION</font></a></li></div>
+            <div class="t" style="position: absolute;top: 60%;left: 15%;background-color: #000;z-index: 102;width: 200px;height: 100px;text-align: center;font-size: 40px;color: #fff;font-family: 'Encode Sans SC', sans-serif;"> <li><a href="#mapa"><font color="white">MAPA</font></a></li></div><div></div>
+        </nav></div>
+      <script>
+        function menu(){
+          if(me.className=="elmenu"){
+            me.className="vr";
+            
+          }
+          else{
+            me.className="elmenu";
+            
+          }
+    
+        }
+      </script>
+</body>
+
+
+</html>
